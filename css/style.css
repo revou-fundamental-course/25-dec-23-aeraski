@@ -135,3 +135,21 @@ form button:hover {
     padding: 10px;
     color: white;
 }
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Tambahkan gaya CSS khusus untuk perangkat dengan lebar layar maksimum 600px */
+    .teal-bg {
+        flex-direction: column; /* Ubah arah flexbox menjadi kolom */
+    }
+
+    .teal-bg .image-container {
+        margin-right: 0; /* Hapus margin kanan pada .image-container */
+        margin-bottom: 20px; /* Tambahkan margin bawah agar formulir dan gambar tidak terlalu dekat */
+    }
+
+    form {
+        max-width: none; /* Hapus batas maksimum lebar pada formulir */
+    }
+}
