@@ -1,0 +1,137 @@
+/* Reset default margin and padding */
+body, h1, p, form, footer {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-img{
+    width: 50px;
+    margin-left: 20px;
+}
+/* BATAS */
+
+/* Gaya untuk .teal-bg */
+.teal-bg {
+    display: flex;
+    justify-content: center; /* Menggeser elemen ke tengah secara horizontal */
+    align-items: center; /* Menggeser elemen ke tengah secara vertikal */
+}
+
+/* Gaya untuk .container */
+.teal-bg .container {
+    display: flex;
+    align-items: center; /* Menggeser elemen ke tengah secara vertikal */
+}
+
+/* Gaya untuk .image-container */
+.teal-bg .image-container {
+    margin-right: 20px; /* Menambahkan margin kanan agar tidak terlalu dekat dengan formulir */
+}
+
+/* Membersihkan flexbox */
+.teal-bg::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* BATAS */
+.triangle {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(3, 80, 80);
+    width: fit-content;
+    font-size: 30px;
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 8px grey;
+    font-weight: bold;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header Styling */
+.header-teal {
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Border Styling */
+.border {
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+/* Section 1 Styling - Aquamarine Background */
+.aquamarine-bg {
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section 2 and Section 3 Styling - Teal Background */
+.teal-bg {
+    background-color: teal;
+    padding: 20px;
+    color: white;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Form Heading Styling */
+.teal-bg h2 {
+    margin-bottom: 10px;
+}
+
+/* Form Label and Input Styling */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Form Button Styling */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: teal;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+.footer-teal {
+    background-color: teal;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}

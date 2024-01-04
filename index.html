@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Assets/logo.png">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>TriMath Wizard</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-teal">
+        <img class="logo-img" src="Assets/logo navbar.png" alt="Website's">
+        <h1>TriMath Wizard</h1>
+    </header>
+
+    <div class="border"></div>
+
+    <!-- Section 1 - Aquamarine Background with Paragraph -->
+    <section class="aquamarine-bg">
+        <p>TriMath Wizard adalah panduan praktis dan ramah yang dirancang untuk membantu Anda dengan perhitungan luas dan keliling segitiga. <br> Tak perlu lagi bingung mengenai rumus-rumus, karena TriMath Wizard akan membimbing Anda melalui setiap langkah dengan mudah.</p>
+    </section>
+
+    <div class="border"></div>
+
+    <!-- Section 2 - Formulir Hitung Luas Segitiga -->
+    <section class="teal-bg">
+        <h2 class="triangle" id="ls">Luas Segitiga </h2>
+        <div class="image-container">
+            <img src="Assets/Luas.jpg" alt="Gambar Luas Segitiga" class="kl-img">
+        </div>
+        <form id="areaForm">
+            <label for="areaSideA">Panjang Alas (a):</label>
+            <input type="number" id="areaSideA" required>
+
+            <label for="areaHeight">Tinggi (t):</label>
+            <input type="number" id="areaHeight" required>
+
+            <div id="areaFormula">
+                <p>Rumus: L = 1/2 * a * t</p>
+            </div>
+
+            <button type="button" onclick="calculateArea()">Hitung Luas</button>
+        </form>
+        <br>
+        </div>
+        <div id="areaResult">
+            <p>Luas Segitiga: </p>
+        </div>
+    </section>
+
+    <div class="border"></div>
+
+    <!-- Section 3 - Formulir Hitung Keliling Segitiga -->
+    <section class="teal-bg">
+
+        <h2 class="triangle" id="ks">Keliling Segitiga </h2>
+        <div class="image-container">
+            <img src="Assets/Keliling.jpg" alt="Gambar Keliling Segitiga" class="kl-img">
+        </div>    
+        <form id="perimeterForm">
+            <label for="perimeterSideA">Sisi A:</label>
+            <input type="number" id="perimeterSideA" required>
+
+            <label for="perimeterSideB">Sisi B:</label>
+            <input type="number" id="perimeterSideB" required>
+
+            <label for="perimeterSideC">Sisi C:</label>
+            <input type="number" id="perimeterSideC" required>
+
+            <div id="perimeterFormula">
+                <p>Rumus: K = S1 + S2 + S3</p>
+            </div>
+
+            <button type="button" onclick="calculatePerimeter()">HITUNG KELILING</button>
+        </form>
+        <br>
+        <div id="perimeterResult">
+            <p>Keliling Segitiga: </p>
+        </div>
+    </section>
+
+    <div class="border"></div>
+
+    <!-- Footer -->
+    <footer class="footer-teal">
+        <p>&copy; 2024 Trimath Wizard | Willy Syachputra</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
